@@ -132,28 +132,38 @@
 
 // console.log(date);
 
-const date = new Date("March 16, 2030 14:25:00");
+// const date = new Date("March 16, 2030 14:25:00");
 
-console.log(date.toString());
-// "Sat Mar 16 2030 14:25:00 GMT+0200 (Eastern European Standard Time)"
+// console.log(date.toString());
+// // "Sat Mar 16 2030 14:25:00 GMT+0200 (Eastern European Standard Time)"
 
-console.log(date.toTimeString());
-// "14:25:00 GMT+0200 (Eastern European Standard Time)"
+// console.log(date.toTimeString());
+// // "14:25:00 GMT+0200 (Eastern European Standard Time)"
 
-console.log(date.toLocaleTimeString());
-// "2:25:00 PM"
+// console.log(date.toLocaleTimeString());
+// // "2:25:00 PM"
 
-console.log(date.toUTCString());
-// "Sat, 16 Mar 2030 12:25:00 GMT"
+// console.log(date.toUTCString());
+// // "Sat, 16 Mar 2030 12:25:00 GMT"
 
-console.log(date.toDateString());
-// "Sat Mar 16 2030"
+// console.log(date.toDateString());
+// // "Sat Mar 16 2030"
 
-console.log(date.toISOString());
-// "2030-03-16T12:25:00.000Z"
+// console.log(date.toISOString());
+// // "2030-03-16T12:25:00.000Z"
 
-console.log(date.toLocaleString());
-// "3/16/2030, 2:25:00 PM"
+// console.log(date.toLocaleString());
+// // "3/16/2030, 2:25:00 PM"
 
-console.log(date.getTime());
-// 1899894300000
+// console.log(date.getTime());
+// // 1899894300000
+
+// Доброго вечора. Знайшов цікаву задачку. В консолі виводить число 8 але не можу ніяк второпати, як це відбувається.
+function calcSumm(numOne, numTwo) {
+  if (numTwo === 1) {
+    return numOne;
+  } else {
+    return numOne * calcSumm(numOne, numTwo - 1);
+  }
+}
+console.log(calcSumm(2, 3));
